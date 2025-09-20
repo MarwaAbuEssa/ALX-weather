@@ -21,3 +21,19 @@ This project is part of the ALX program, where I chose to develop a weather dash
         - Show “Good morning / Good evening” messages with weather updates.
         - Change dashboard themes (light/day vs. dark/night) depending on sunrise/sunset times.
         - Send a notification if there’s rain expected in the next hour.
+
+## Setup
+
+### Frontend (Angular)
+
+1.  Navigate to the frontend directory: `cd weather-dashboard-frontend`
+2.  Install dependencies: `npm install`
+3.  Run the development server: `ng serve`
+4.  Open your browser to `http://localhost:4200/`
+
+### Backend (Node.js)
+
+1.  Navigate to the backend directory: `cd weather-dashboard-backend`
+2.  Install dependencies: `npm install`
+3.  Start the server: `node server.js`
+4.  The backend will be running on `http://localhost:3000/`
