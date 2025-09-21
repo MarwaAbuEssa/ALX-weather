@@ -1,0 +1,67 @@
+<section class="vh-100" style="background-color: #f5f6f7;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+
+        <div class="card text-white" style="border-radius: 40px;">
+          <div class="bg-image" style="border-radius: 35px;">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
+              class="card-img" alt="weather" />
+            <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
+          </div>
+          <div class="card-img-overlay text-dark p-5">
+            <div class="mb-3">
+              <label for="citySelect" class="form-label">Select a City:</label>
+              <select id="citySelect" class="form-select" [(ngModel)]="selectedCity" (change)="onCityChange()">
+                <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="citySearch" class="form-label">Search for a City:</label>
+              <div class="input-group">
+                <input type="text" id="citySearch" class="form-control" [(ngModel)]="selectedCity" placeholder="Enter city name">
+                <button class="btn btn-primary" type="button" (click)="onSearch()">Search</button>
+              </div>
+            </div>
+
+            <div *ngIf="weatherData" class="row d-flex justify-content-center py-5">
+              <div class="col-md-8 col-lg-6 col-xl-5">
+                <div class="card text-body" style=" border-radius: 35px;">
+                  <div class="card-body p-4">
+                    <div class="d-flex">
+                      <h6 class="flex-grow-1">{{ weatherData.name }}</h6>
+                      <h6>{{ currentTime | date:'shortTime' }}</h6>
+                    </div>
+                    <div class="d-flex flex-column text-center mt-5 mb-4">
+                      <h6 class="display-4 mb-0 font-weight-bold" [class.text-danger]="weatherData.main.temp > 25"> {{ weatherData.main.temp }}°C </h6>
+                      <span class="small" style="color: #868B94">{{ weatherData.weather[0].description | titlecase }}</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1" style="font-size: 1rem;">
+                        <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {{ weatherData.wind.speed }} km/h
+                          </span>
+                        </div>
+                        <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {{ weatherData.main.humidity }}%
+                          </span></div>
+                        <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h
+                          </span></div>
+                      </div>
+                      <div>
+                        <img [src]="getWeatherIcon()"
+                          width="100px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="!weatherData" class="mt-4 text-center">
+              <p class="text-muted">Loading weather data...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
