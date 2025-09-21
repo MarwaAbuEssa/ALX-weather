@@ -50,7 +50,7 @@ To run this application, you need an API key from OpenWeatherMap.
 Here are some screenshots demonstrating the application's functionality for various cities:
 
 ### Alexandria
-![Alexandria Weather](https://i.imgur.com/your_alexandria_image_link.png)
+![Alexandria Weather](./alex.png)
 
 ### Dar es Salaam
 ![Dar es Salaam Weather](https://i.imgur.com/your_dar_es_salaam_image_link.png)
