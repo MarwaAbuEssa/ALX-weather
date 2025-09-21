@@ -52,14 +52,10 @@ Here are some screenshots demonstrating the application's functionality for vari
 ### Alexandria
 ![Alexandria Weather](./weather-dashboard-frontend/public/alex.png)
 
-### Dar es Salaam
-![Dar es Salaam Weather](./dar.png)
 
 ### Johannesburg
-![Johannesburg Weather](./john.png)
+![Johannesburg Weather](./weather-dashboard-frontend/public/john.png)
 
-### Cairo
-![Cairo Weather](./cairo.png)
 
 ## Unit Testing
 
