@@ -50,16 +50,16 @@ To run this application, you need an API key from OpenWeatherMap.
 Here are some screenshots demonstrating the application's functionality for various cities:
 
 ### Alexandria
-![Alexandria Weather](./alex.png)
+![Alexandria Weather](./weather-dashboard-frontend/public/alex.png)
 
 ### Dar es Salaam
-![Dar es Salaam Weather](https://i.imgur.com/your_dar_es_salaam_image_link.png)
+![Dar es Salaam Weather](Screenshot%202025-09-21%20at%204.14.34%E2%80%AFAM.png)
 
 ### Johannesburg
-![Johannesburg Weather](https://i.imgur.com/your_johannesburg_image_link.png)
+![Johannesburg Weather](Screenshot%202025-09-21%20at%204.14.06%E2%80%AFAM.png)
 
 ### Cairo
-![Cairo Weather](https://i.imgur.com/your_cairo_image_link.png)
+![Cairo Weather](Screenshot%202025-09-21%20at%204.13.36%E2%80%AFAM.png)
 
 ## Unit Testing
 
